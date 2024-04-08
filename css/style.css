@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Gupter:wght@700&family=IBM+Plex+Mono:wght@500;600&display=swap");
+
+:root {
+  --blue-color: rgb(0, 102, 255);
+  --black-color: rgb(0, 0, 0);
+  --white-color: rgb(255, 255, 255);
+  --grey-color: rgb(98, 98, 98);
+  --medium-grey-color: rgb(127, 127, 127);
+  --light-grey-color: rgb(173, 173, 173);
+}
+
+.ibm-plex mono-medium {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ibm-plex mono-semibold {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.gupter-bold {
+  font-family: "Gupter", serif;
+  font-weight: 700;
+  font-style: normal;
+}
