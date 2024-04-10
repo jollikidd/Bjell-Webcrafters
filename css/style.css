@@ -9,13 +9,13 @@
   --light-grey-color: rgb(173, 173, 173);
 }
 
-.ibm-plex mono-medium {
+.ibm-plex-mono-medium {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 500;
   font-style: normal;
 }
 
-.ibm-plex mono-semibold {
+.ibm-plex-mono-semibold {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 600;
   font-style: normal;
@@ -25,4 +25,20 @@
   font-family: "Gupter", serif;
   font-weight: 700;
   font-style: normal;
+}
+
+.vr {
+  background-color: var(--light-grey-color);
+}
+
+@media only screen and (max-width: 992px) {
+  ul {
+    list-style-type: circle !important;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  header {
+    background-color: transparent !important;
+  }
 }
