@@ -2,7 +2,7 @@
 
 // Add header html to the page
 document.write(
-  `<header class="navbar navbar-expand-lg py-3 py-lg-5 container-lg px-4 px-lg-0 d-flex flex-wrap align-items-center justify-content-between">
+  `<header class="navbar navbar-expand-lg py-3 py-lg-5 container-lg px-3 px-lg-0 mb-5 d-flex flex-wrap align-items-center justify-content-between">
     <a
       class="navbar-brand gupter-bold order-2 order-lg-1"
       id="bjellLogo"
