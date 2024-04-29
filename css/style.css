@@ -9,6 +9,10 @@
   --light-grey-color: rgb(173, 173, 173);
 }
 
+header {
+  position: relative;
+}
+
 .ibm-plex-mono-medium {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 500;
@@ -31,9 +35,40 @@
   background-color: var(--light-grey-color);
 }
 
+.blue-bg {
+  background-color: var(--blue-color);
+}
+
+.full-height-navigation {
+  height: 100vh;
+  position: absolute;
+  align-items: flex-start !important;
+  align-content: flex-start;
+  gap: 1rem;
+}
+
+.active {
+  text-decoration: underline 1px;
+  text-underline-offset: 8px;
+}
+
+#bjellLogo {
+  font-size: 3rem;
+}
+
 @media only screen and (max-width: 992px) {
   ul {
-    list-style-type: circle !important;
+    list-style-type: disc !important;
+    list-style-position: inside;
+    color: var(--white-color) !important;
+  }
+
+  .text-light-lg {
+    color: var(--white-color) !important;
+  }
+
+  #bjellLogo {
+    font-size: 2.25rem;
   }
 }
 
