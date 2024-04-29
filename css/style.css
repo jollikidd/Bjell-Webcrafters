@@ -1,4 +1,38 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Gupter:wght@700&family=IBM+Plex+Mono:wght@500;600&display=swap");
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Gupter";
+}
+
+body {
+min-height: 100vh;
+background: white;
+background-size: cover;
+background-position: center;
+}
+
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background-color: white;
+  display:flex;
+  justify-content: space-between;
+  z-index: 100px;
+}
+
+
+
+
+
 
 :root {
   --blue-color: rgb(0, 102, 255);
@@ -25,4 +59,21 @@
   font-family: "Gupter", serif;
   font-weight: 700;
   font-style: normal;
+}
+
+
+.img-bjell {
+width: 1100px;
+margin-top: 100px;
+margin-left: 400px;
+margin-right: 400px;
+margin-bottom: 100px;
+}
+
+.button {
+background: black;
+border-radius: 50px;
+
+}
+
 }
