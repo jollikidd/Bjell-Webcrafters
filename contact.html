@@ -40,7 +40,9 @@
         <h2 class="ibm-plex-mono-semibold tighter-letter-spacing pb-3">
           Customer service:
         </h2>
-        <ul class="ibm-plex-mono-medium fs-5 fs-lg-6 tighter-letter-spacing">
+        <ul
+          class="ibm-plex-mono-medium fs-5 fs-lg-6 tighter-letter-spacing p-0"
+        >
           <li>Email: contact@bjell.se</li>
           <li>Phone number: +46 701 234567</li>
         </ul>
@@ -56,7 +58,9 @@
             src="img/flag_sweden.png"
             alt="Flag of Sweden"
           />
-          <ul class="ibm-plex-mono-medium fs-5 fs-lg-6 tighter-letter-spacing">
+          <ul
+            class="ibm-plex-mono-medium fs-5 fs-lg-6 tighter-letter-spacing p-0"
+          >
             <li>
               Humlegårdsgatan 20, 114 46 Stockholm, Sweden
               <ul>
@@ -72,7 +76,9 @@
             src="img/flag_finland.png"
             alt="Flag of Finland"
           />
-          <ul class="ibm-plex-mono-medium fs-5 fs-lg-6 tighter-letter-spacing">
+          <ul
+            class="ibm-plex-mono-medium fs-5 fs-lg-6 tighter-letter-spacing p-0"
+          >
             <li>
               Rikhardinkatu 4, 00100 Helsinki, Finland
               <ul>
@@ -91,7 +97,9 @@
             src="img/flag_new_zealand.jpg"
             alt="Flag of New Zealand"
           />
-          <ul class="ibm-plex-mono-medium fs-5 fs-lg-6 tighter-letter-spacing">
+          <ul
+            class="ibm-plex-mono-medium fs-5 fs-lg-6 tighter-letter-spacing p-0"
+          >
             <li>
               17 Henderson Road, Auckland, New Zealand
               <ul>
@@ -109,7 +117,7 @@
         <h2 class="ibm-plex-mono-semibold tighter-letter-spacing mb-5">
           Send us an Email:
         </h2>
-        <form class="ibm-plex-mono-medium">
+        <form class="ibm-plex-mono-medium needs-validation">
           <div class="mb-5">
             <label for="nameInput" class="form-label fs-4 mb-3">Name</label>
             <input
@@ -118,8 +126,13 @@
               id="nameInput"
               aria-describedby="nameHelp"
               placeholder="Your name"
+              min="2"
+              required
             />
-            <div id="nameHelp" class="form-text"></div>
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">
+              Please give us a name with minimum length of 2 characters.
+            </div>
           </div>
           <div class="mb-5">
             <label for="emailInput" class="form-label fs-4 mb-3">Email</label>
@@ -143,17 +156,19 @@
               rows="3"
             ></textarea>
           </div>
-          <div class="mb-3 form-check">
+          <div class="mb-5 form-check">
             <input
               type="checkbox"
               class="form-check-input"
-              id="exampleCheck1"
+              id="sendCopyCheckbox"
             />
-            <label class="form-check-label fs-5" for="exampleCheck1"
+            <label class="form-check-label fs-5" for="sendCopyCheckbox"
               >Send a copy to my email</label
             >
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary fs-4 btn-block mt-5">
+            send
+          </button>
         </form>
       </section>
     </main>
