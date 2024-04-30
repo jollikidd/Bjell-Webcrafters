@@ -18,6 +18,7 @@
     />
     <!-- Own Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
     <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -28,5 +29,133 @@
   </head>
   <body>
     <script src="javascript/header.js"></script>
+    <main class="container-lg px-4 px-lg-5">
+      <h1
+        class="ibm-plex-mono-semibold tighter-letter-spacing text-center text-md-start pb-5"
+      >
+        contact us
+      </h1>
+
+      <section class="pt-5 pb-4">
+        <h2 class="ibm-plex-mono-semibold tighter-letter-spacing pb-3">
+          Customer service:
+        </h2>
+        <ul class="ibm-plex-mono-medium fs-5 fs-lg-6 tighter-letter-spacing">
+          <li>Email: contact@bjell.se</li>
+          <li>Phone number: +46 701 234567</li>
+        </ul>
+      </section>
+
+      <section class="pb-5">
+        <h2 class="ibm-plex-mono-semibold tighter-letter-spacing pb-3">
+          Store locations:
+        </h2>
+        <div class="pb-3">
+          <img
+            class="flag pb-3"
+            src="img/flag_sweden.png"
+            alt="Flag of Sweden"
+          />
+          <ul class="ibm-plex-mono-medium fs-5 fs-lg-6 tighter-letter-spacing">
+            <li>
+              Humlegårdsgatan 20, 114 46 Stockholm, Sweden
+              <ul>
+                <li>Store phone number: +46 723 639120</li>
+                <li>Opening hours: Mon-Fri 10AM-4PM, closed on weekends</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="pb-3">
+          <img
+            class="flag pb-3"
+            src="img/flag_finland.png"
+            alt="Flag of Finland"
+          />
+          <ul class="ibm-plex-mono-medium fs-5 fs-lg-6 tighter-letter-spacing">
+            <li>
+              Rikhardinkatu 4, 00100 Helsinki, Finland
+              <ul>
+                <li>Store phone number: +358 40 826 0378</li>
+                <li>
+                  Opening hours: Mon-Fri 10AM-5PM, Sat 12PM-5PM, closed on
+                  Sundays
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <img
+            class="flag pb-3"
+            src="img/flag_new_zealand.jpg"
+            alt="Flag of New Zealand"
+          />
+          <ul class="ibm-plex-mono-medium fs-5 fs-lg-6 tighter-letter-spacing">
+            <li>
+              17 Henderson Road, Auckland, New Zealand
+              <ul>
+                <li>Store phone number: +64 022 094 8378</li>
+                <li>
+                  Opening hours: Tue-Sat 9am-4pm, closed on Mondays, Sundays
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="pt-5">
+        <h2 class="ibm-plex-mono-semibold tighter-letter-spacing mb-5">
+          Send us an Email:
+        </h2>
+        <form class="ibm-plex-mono-medium">
+          <div class="mb-5">
+            <label for="nameInput" class="form-label fs-4 mb-3">Name</label>
+            <input
+              type="text"
+              class="form-control fs-5"
+              id="nameInput"
+              aria-describedby="nameHelp"
+              placeholder="Your name"
+            />
+            <div id="nameHelp" class="form-text"></div>
+          </div>
+          <div class="mb-5">
+            <label for="emailInput" class="form-label fs-4 mb-3">Email</label>
+            <input
+              type="email"
+              class="form-control fs-5"
+              id="emailInput"
+              aria-describedby="emailHelp"
+              placeholder="example@gmail.com"
+            />
+            <div id="emailHelp" class="form-text"></div>
+          </div>
+          <div class="mb-5">
+            <label for="messageTextArea" class="form-label fs-4 mb-3"
+              >Message</label
+            >
+            <textarea
+              class="form-control fs-5"
+              id="messageTextArea"
+              placeholder="Send us a message here."
+              rows="3"
+            ></textarea>
+          </div>
+          <div class="mb-3 form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+            <label class="form-check-label fs-5" for="exampleCheck1"
+              >Send a copy to my email</label
+            >
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
