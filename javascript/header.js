@@ -1,4 +1,5 @@
 // Scripts for navigation
+'use strict';
 
 // Add header html to the page
 document.write(
