@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gupter:wght@700&family=IBM+Plex+Mono:wght@500;600&display=swap');
 
+/** Root colours */
 :root {
   --blue-color: rgb(0, 102, 255);
   --black-color: rgb(0, 0, 0);
@@ -9,27 +10,7 @@
   --light-grey-color: rgb(173, 173, 173);
 }
 
-header {
-  position: relative;
-}
-
-h1 {
-  font-size: 2.25rem;
-}
-
-h2 {
-  font-size: 1.75rem;
-}
-
-ul {
-  list-style-position: inside;
-}
-
-input[type='checkbox']:focus {
-  box-shadow: 0 0 0px rgba(0, 0, 0, 0) inset, 0 0 0px rgba(0, 0, 0, 0);
-  outline: 1px solid var(--black-color);
-}
-
+/** Fonts */
 .ibm-plex-mono-medium {
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 500;
@@ -48,12 +29,30 @@ input[type='checkbox']:focus {
   font-style: normal;
 }
 
-.vr {
-  background-color: var(--light-grey-color);
+/** Text styles */
+h1 {
+  font-size: 2.25rem;
 }
 
-.blue-bg {
-  background-color: var(--blue-color);
+h2 {
+  font-size: 1.75rem;
+}
+
+.text-grey {
+  color: var(--grey-color);
+}
+
+.text-blue {
+  color: var(--blue-color);
+}
+
+.tighter-letter-spacing {
+  letter-spacing: -2px;
+}
+
+/** Header and navigation styles */
+header {
+  position: relative;
 }
 
 .full-height-navigation {
@@ -70,18 +69,11 @@ input[type='checkbox']:focus {
   text-underline-offset: 8px;
 }
 
-.text-grey {
-  color: var(--grey-color);
+#bjellLogo {
+  font-size: 3rem;
 }
 
-.text-blue {
-  color: var(--blue-color);
-}
-
-.tighter-letter-spacing {
-  letter-spacing: -2px;
-}
-
+/** Button styles */
 .btn-primary {
   border-radius: 0;
   min-height: 75px;
@@ -93,6 +85,12 @@ input[type='checkbox']:focus {
 
 .btn-primary:hover {
   background-color: var(--blue-color);
+}
+
+/** Form input styling */
+input[type='checkbox']:focus {
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0) inset, 0 0 0px rgba(0, 0, 0, 0);
+  outline: 1px solid var(--black-color);
 }
 
 .form-control {
@@ -137,19 +135,40 @@ input[type='checkbox']:focus {
   color: var(--black-color) !important;
 }
 
+/** Modal border-radius to 0 */
 .modal-content {
   border-radius: 0px;
 }
 
-#bjellLogo {
-  font-size: 3rem;
+/** Width for flags on Contact page */
+.flag {
+  width: 82px;
+}
+
+/** Ul styles */
+ul {
+  list-style-position: inside;
+}
+
+/** Change vertical line colour */
+.vr {
+  background-color: var(--light-grey-color);
+}
+
+/** Blue background class */
+.blue-bg {
+  background-color: var(--blue-color);
 }
 
 @media only screen and (max-width: 992px) {
-  ul {
+  /** Style navigation ul on small sizes */
+  #navbarNav ul {
     list-style-type: disc !important;
+    list-style-position: outside;
+    color: var(--white-color) !important;
   }
 
+  /** Text styles */
   h1 {
     font-size: 2rem;
   }
@@ -162,21 +181,17 @@ input[type='checkbox']:focus {
     color: var(--white-color) !important;
   }
 
+  /** Button styles */
   .btn-primary {
     width: 100%;
   }
 
+  /** Header and navigation styles */
   #bjellLogo {
     font-size: 2.25rem;
   }
 
   #navbarNav ul {
     color: var(--white-color) !important;
-  }
-}
-
-@media only screen and (min-width: 993px) {
-  header {
-    background-color: transparent !important;
   }
 }

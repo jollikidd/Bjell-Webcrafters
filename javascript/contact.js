@@ -1,11 +1,12 @@
 'use strict';
 
-// Modal for telling user the message was sent
+// Modal for telling user that form submit was successful
 const modal = new bootstrap.Modal(
   document.getElementById('contactSuccessfulModal')
 );
-// Contact form and textarea
+// Contact form
 const contactForm = document.getElementById('contactForm');
+// Textarea
 const messafeTextArea = document.getElementById('messageTextArea');
 // Span element where the character count will be displayed
 const charCountSpan = document.getElementById('charCount');
@@ -14,7 +15,7 @@ const invalidFormFeedback = document.getElementById('invalidFormFeedback');
 // Check if the form was submitted and the state is stored in localStorage
 const isFormSubmitted = localStorage.getItem('formSubmitted');
 
-// If the form was submitted previously, show the modal
+// If the form was submitted previously, show the modal and delete formSubmitted from localStorage
 if (isFormSubmitted === 'true') {
   modal.show();
   localStorage.removeItem('formSubmitted');
@@ -42,17 +43,8 @@ contactForm.addEventListener(
 messafeTextArea.addEventListener('input', () => {
   // Get the value of the messafeTextArea
   const text = messafeTextArea.value;
-
   // Count the characters
   const charCount = text.length;
-
   // Update the character count display
   charCountSpan.textContent = charCount + '/300';
 });
-
-// const myModal = document.getElementById('myModal');
-// const myInput = document.getElementById('myInput');
-
-// myModal.addEventListener('shown.bs.modal', () => {
-//   myInput.focus();
-// });
