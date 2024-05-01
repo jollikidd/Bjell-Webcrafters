@@ -26,16 +26,20 @@
       crossorigin="anonymous"
       defer
     ></script>
+    <!-- Form validation -->
+    <script src="javascript/contact.js" defer></script>
   </head>
   <body>
+    <!-- Header -->
     <script src="javascript/header.js"></script>
+    <!-- Main content -->
     <main class="container-lg px-4 px-lg-5">
       <h1
         class="ibm-plex-mono-semibold tighter-letter-spacing text-center text-md-start pb-5"
       >
         contact us
       </h1>
-
+      <!-- Customer service information -->
       <section class="pt-5 pb-4">
         <h2 class="ibm-plex-mono-semibold tighter-letter-spacing pb-3">
           Customer service:
@@ -47,7 +51,7 @@
           <li>Phone number: +46 701 234567</li>
         </ul>
       </section>
-
+      <!-- Store location information -->
       <section class="pb-5">
         <h2 class="ibm-plex-mono-semibold tighter-letter-spacing pb-3">
           Store locations:
@@ -112,26 +116,32 @@
           </ul>
         </div>
       </section>
-
+      <!-- Contact form -->
       <section class="pt-5">
         <h2 class="ibm-plex-mono-semibold tighter-letter-spacing mb-5">
           Send us an Email:
         </h2>
-        <form class="ibm-plex-mono-medium needs-validation">
+        <form
+          id="contactForm"
+          class="ibm-plex-mono-medium needs-validation"
+          novalidate
+        >
           <div class="mb-5">
-            <label for="nameInput" class="form-label fs-4 mb-3">Name</label>
+            <label for="nameInput" class="form-label fs-4 mb-3 invalid"
+              >Name</label
+            >
             <input
               type="text"
               class="form-control fs-5"
               id="nameInput"
               aria-describedby="nameHelp"
-              placeholder="Your name"
-              min="2"
+              placeholder="Bill"
+              minlength="3"
               required
             />
             <div class="valid-feedback">Looks good!</div>
             <div class="invalid-feedback">
-              Please give us a name with minimum length of 2 characters.
+              Please provide us a name with minimum length of 2 characters.
             </div>
           </div>
           <div class="mb-5">
@@ -142,8 +152,32 @@
               id="emailInput"
               aria-describedby="emailHelp"
               placeholder="example@gmail.com"
+              required
             />
-            <div id="emailHelp" class="form-text"></div>
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Please provide us a valid email.</div>
+          </div>
+          <div class="mb-5">
+            <label for="phonenumberInput" class="form-label fs-4 mb-3"
+              >Phonenumber</label
+            >
+            <input
+              type="tel"
+              class="form-control fs-5"
+              id="phonenumberInput"
+              aria-describedby="phonenumberHelp"
+              placeholder="333444555"
+              pattern="[0-9]*"
+              maxlength="15"
+              minlength="3"
+              required
+            />
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">
+              Please provide a valid phone number consisting only of numbers,
+              which is at least 3 characters long and no more than 15 characters
+              long.
+            </div>
           </div>
           <div class="mb-5">
             <label for="messageTextArea" class="form-label fs-4 mb-3"
@@ -153,8 +187,17 @@
               class="form-control fs-5"
               id="messageTextArea"
               placeholder="Send us a message here."
-              rows="3"
+              rows="5"
+              maxlength="300"
+              minlength="10"
+              required
             ></textarea>
+            <span class="mb-2 float-end" id="charCount">0/300</span>
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">
+              Please provide a message which is at least 10 characters long and
+              no more than 300 characters long.
+            </div>
           </div>
           <div class="mb-5 form-check">
             <input
@@ -166,10 +209,38 @@
               >Send a copy to my email</label
             >
           </div>
+          <div class="invalid-feedback" id="invalidFormFeedback">
+            Please fill in the required fields.
+          </div>
           <button type="submit" class="btn btn-primary fs-4 btn-block mt-5">
             send
           </button>
         </form>
+      </section>
+      <!-- Modal -->
+      <section
+        class="modal fade"
+        id="contactSuccessfulModal"
+        tabindex="-1"
+        aria-labelledby="contactSuccessfulModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <p class="ibm-plex-mono-semibold fs-5">
+                Thank you for contacting us, we will be in touch shortly.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary ibm-plex-mono-semibold fs-4 btn-block mt-3 w-100"
+                data-bs-dismiss="modal"
+              >
+                close
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   </body>
