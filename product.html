@@ -26,6 +26,8 @@
       crossorigin="anonymous"
       defer
     ></script>
+    <!-- Custom JS -->
+    <script src="javascript/product.js" defer></script>
   </head>
   <body>
     <!-- Header -->
@@ -35,73 +37,159 @@
       <div class="row pb-5">
         <div class="col-md-4">
           <img
-            class="img-fluid"
+            id="productImg"
+            class="img-fluid d-block m-auto"
             src="img/collection_woolen_jacket.jpg"
-            alt=""
+            alt="Product image"
           />
         </div>
         <div class="col-md-1"></div>
         <div class="col-md-5">
+          <!-- Product name -->
           <h1
-            class="ibm-plex-mono-semibold tighter-letter-spacing text-center text-md-start pb-5"
+            class="ibm-plex-mono-semibold tighter-letter-spacing text-center text-md-start pt-5 pt-m-0 pb-5"
             id="name"
           >
             Womens Jacket
           </h1>
+          <!-- Product price -->
           <p
             id="price"
             class="fs-5 ibm-plex-mono-medium text-medium-grey pb-5 m-0"
           >
             37,066 kr
           </p>
+          <!-- Product info -->
           <p id="info" class="fs-5 ibm-plex-mono-medium pb-5 m-0">
             sleek, silk, smooth. wrap up warmly for any occassion.
           </p>
           <hr class="black-bg" />
+          <!-- Colour selection -->
           <h3 class="ibm-plex-mono-semibold tighter-letter-spacing pt-5 pb-3">
             Colour
           </h3>
-          <div class="color-selector d-flex justify-content-start pb-5">
-            <div class="custom-control">
-              <input
-                type="radio"
-                id="brown"
-                name="colorGroup"
-                class="custom-control-input"
-                tabindex="-1"
-              />
-              <label
-                class="custom-control-label brown-label"
-                for="brown"
-              ></label>
-            </div>
-            <div class="custom-control">
+          <div class="d-flex justify-content-start">
+            <div class="color-selector">
               <input
                 type="radio"
                 id="beige"
                 name="colorGroup"
-                class="custom-control-input"
+                class="color-selector-input"
                 tabindex="-1"
+                checked
               />
               <label
-                class="custom-control-label beige-label"
+                class="color-selector-label beige-label"
                 for="beige"
               ></label>
             </div>
-            <div class="custom-control">
+            <div class="color-selector">
+              <input
+                type="radio"
+                id="brown"
+                name="colorGroup"
+                class="color-selector-input"
+                tabindex="-1"
+              />
+              <label
+                class="color-selector-label brown-label"
+                for="brown"
+              ></label>
+            </div>
+            <div class="color-selector">
               <input
                 type="radio"
                 id="blue"
                 name="colorGroup"
-                class="custom-control-input"
+                class="color-selector-input"
                 tabindex="-1"
               />
-              <label class="custom-control-label blue-label" for="blue"></label>
+              <label class="color-selector-label blue-label" for="blue"></label>
             </div>
           </div>
-          <h3 class="ibm-plex-mono-semibold tighter-letter-spacing">Size</h3>
+          <!-- Size selection -->
+          <h3 class="ibm-plex-mono-semibold tighter-letter-spacing pt-5 pb-3">
+            Size
+          </h3>
+          <div class="d-flex justify-content-start pb-4">
+            <div class="size-selector">
+              <input
+                type="radio"
+                id="xsSize"
+                name="sizeGroup"
+                class="size-selector-input"
+                tabindex="-1"
+              />
+              <label class="size-selector-label xs-size-label" for="xsSize"
+                >XS</label
+              >
+            </div>
+            <div class="size-selector">
+              <input
+                type="radio"
+                id="sSize"
+                name="sizeGroup"
+                class="size-selector-input"
+                tabindex="-1"
+              />
+              <label class="size-selector-label s-size-label" for="sSize"
+                >S</label
+              >
+            </div>
+            <div class="size-selector">
+              <input
+                type="radio"
+                id="mSize"
+                name="sizeGroup"
+                class="size-selector-input"
+                tabindex="-1"
+              />
+              <label class="size-selector-label m-size-label" for="mSize"
+                >M</label
+              >
+            </div>
+          </div>
+          <div class="d-flex justify-content-start pb-5">
+            <div class="size-selector">
+              <input
+                type="radio"
+                id="lSize"
+                name="sizeGroup"
+                class="size-selector-input"
+                tabindex="-1"
+              />
+              <label class="size-selector-label l-size-label" for="lSize"
+                >L</label
+              >
+            </div>
+            <div class="size-selector">
+              <input
+                type="radio"
+                id="xlSize"
+                name="sizeGroup"
+                class="size-selector-input"
+                tabindex="-1"
+              />
+              <label class="size-selector-label xl-size-label" for="xlSize"
+                >XL</label
+              >
+            </div>
+            <div class="size-selector">
+              <input
+                type="radio"
+                id="2xlSize"
+                name="sizeGroup"
+                class="size-selector-input"
+                tabindex="-1"
+              />
+              <label class="size-selector-label 2xl-size-label" for="2xlSize"
+                >2XL</label
+              >
+            </div>
+          </div>
+          <!-- Add to cart button -->
           <button
-            class="btn btn-primary fs-4 btn-block mt-5 ibm-plex-mono-medium"
+            class="btn btn-primary fs-4 btn-block mt-2 ibm-plex-mono-medium"
           >
             add to cart
           </button>
