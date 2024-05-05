@@ -67,14 +67,26 @@ header {
 
 
 .img-bjell {
-width: 1100px;
-margin-top: 100px;
-margin-left: 400px;
-margin-right: 400px;
-margin-bottom: 100px;
+flex: content;
+margin-left: 200px;
+margin-right: 200px;
+width: 900px;
 }
 
-.button {
+
+.box{
+border:5px solid;
+font-size: 5em;
+width: 250px;
+height:250px;
+
+
+
+}
+
+
+
+.btn {
 background: black;
 border-radius: 50px;
 
