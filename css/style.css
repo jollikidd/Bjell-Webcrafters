@@ -42,6 +42,10 @@ h2 {
   color: var(--grey-color);
 }
 
+.text-medium-grey {
+  color: var(--medium-grey-color);
+}
+
 .text-blue {
   color: var(--blue-color);
 }
@@ -153,6 +157,12 @@ ul {
 /** Change vertical line colour */
 .vr {
   background-color: var(--light-grey-color);
+}
+
+/** Black background class */
+.black-bg {
+  background-color: var(--black-color);
+  opacity: 1;
 }
 
 /** Blue background class */
