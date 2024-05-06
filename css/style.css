@@ -91,6 +91,15 @@ header {
   background-color: var(--blue-color);
 }
 
+.btn-action{
+border-radius: 50px;
+background-color: var(--black-color);
+color: white;
+padding:1rem 4.5rem 
+
+
+}
+
 /** Form input styling */
 input[type='checkbox']:focus {
   box-shadow: 0 0 0px rgba(0, 0, 0, 0) inset, 0 0 0px rgba(0, 0, 0, 0);
