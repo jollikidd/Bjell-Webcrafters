@@ -2,7 +2,7 @@
 
 /** Root colours */
 :root {
-  --blue-color: rgb(0, 102, 255);
+  --blue-color: rgb(0, 64, 161);
   --black-color: rgb(0, 0, 0);
   --white-color: rgb(255, 255, 255);
   --grey-color: rgb(98, 98, 98);
@@ -102,7 +102,7 @@ header {
   border-radius: 50px;
   background-color: var(--blue-color);
   color: white;
-  padding: 1rem 4.5rem;
+  padding: 0.5rem 3rem;
 }
 
 * {
