@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Gupter:wght@700&family=IBM+Plex+Mono:wght@500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@700&family=IBM+Plex+Mono:wght@500;600&display=swap');
 
 /** Root colours */
 :root {
@@ -12,19 +12,19 @@
 
 /** Fonts */
 .ibm-plex-mono-medium {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: 'IBM Plex Mono', monospace;
   font-weight: 500;
   font-style: normal;
 }
 
 .ibm-plex-mono-semibold {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: 'IBM Plex Mono', monospace;
   font-weight: 600;
   font-style: normal;
 }
 
 .gupter-bold {
-  font-family: "Gupter", serif;
+  font-family: 'Gupter', serif;
   font-weight: 700;
   font-style: normal;
 }
@@ -82,6 +82,7 @@ header {
 footer {
   background-color: var(--blue-color);
   color: var(--white-color);
+  margin-top: 9rem;
 }
 
 footer ul {
@@ -133,8 +134,20 @@ footer input::placeholder {
   color: var(--white-color) !important;
 }
 
+footer a {
+  color: var(--white-color);
+}
+
+footer ul a {
+  text-decoration: none;
+}
+
 footer .btn-primary {
   width: auto;
+}
+
+.sheep-container {
+  height: 200px;
 }
 
 /** Button styles */
@@ -172,123 +185,134 @@ footer .btn-primary {
 }
 
 body {
-  font-family: "IBM Plex Mono";
+  font-family: 'IBM Plex Mono';
 
-
-
-
-
-/** Form input styling */
-input[type="checkbox"]:focus {
-  box-shadow: 0 0 0px rgba(0, 0, 0, 0) inset, 0 0 0px rgba(0, 0, 0, 0);
-  outline: 1px solid var(--black-color);
-}
-
-.form-control {
-  min-height: 75px !important;
-  border-radius: 0;
-  padding: 1.25rem 1.25rem;
-  border: 3px solid var(--medium-grey-color);
-}
-
-.form-control:focus,
-.form-control:invalid:focus,
-.form-control:valid:focus {
-  border-color: var(--black-color) !important;
-  box-shadow: 0 0 0px rgba(0, 0, 0, 0) inset, 0 0 0px rgba(0, 0, 0, 0) !important;
-  outline: 1px solid var(--black-color) !important;
-  box-shadow: none !important;
-}
-
-.form-check-input {
-  height: 1.5rem;
-  width: 1.5rem;
-  margin-right: 1rem;
-  border-radius: 50% !important;
-  border: 1px solid var(--medium-grey-color);
-  background-color: var(--light-grey-color);
-}
-
-.form-check-input:valid {
-  box-shadow: none !important;
-  border: 1px solid var(--medium-grey-color) !important;
-}
-
-.form-check-input:checked,
-.form-check-input:checked:valid {
-  background-color: var(--black-color) !important;
-  border: 4px solid var(--white-color) !important;
-  outline: 1px solid var(--medium-grey-color);
-  background-image: none;
-}
-
-.form-check-input:valid ~ .form-check-label {
-  color: var(--black-color) !important;
-}
-
-/** Modal border-radius to 0 */
-.modal-content {
-  border-radius: 0px;
-}
-
-/** Width for flags on Contact page */
-.flag {
-  width: 82px;
-}
-
-/** Ul styles */
-ul {
-  list-style-position: inside;
-}
-
-/** Change vertical line colour */
-.vr {
-  background-color: var(--light-grey-color);
-}
-
-/** Black background class */
-.black-bg {
-  background-color: var(--black-color);
-  opacity: 1;
-}
-
-/** Blue background class */
-.blue-bg {
-  background-color: var(--blue-color);
-}
-
-@media only screen and (max-width: 992px) {
-  /** Style navigation ul on small sizes */
-  #navbarNav ul {
-    list-style-type: disc !important;
-    list-style-position: outside;
-    color: var(--white-color) !important;
+  /** Form input styling */
+  input[type='checkbox']:focus {
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0) inset, 0 0 0px rgba(0, 0, 0, 0);
+    outline: 1px solid var(--black-color);
   }
 
-  /** Text styles */
-  h1 {
-    font-size: 2rem;
+  .form-control {
+    min-height: 75px !important;
+    border-radius: 0;
+    padding: 1.25rem 1.25rem;
+    border: 3px solid var(--medium-grey-color);
   }
 
-  .fs-lg-6 {
-    font-size: 1rem !important;
+  .form-control:focus,
+  .form-control:invalid:focus,
+  .form-control:valid:focus {
+    border-color: var(--black-color) !important;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0) inset, 0 0 0px rgba(0, 0, 0, 0) !important;
+    outline: 1px solid var(--black-color) !important;
+    box-shadow: none !important;
   }
 
-  .text-light-lg {
-    color: var(--white-color) !important;
+  .form-check-input {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 1rem;
+    border-radius: 50% !important;
+    border: 1px solid var(--medium-grey-color);
+    background-color: var(--light-grey-color);
   }
 
-  /** Button styles */
-  .btn-primary {
-    width: 100%;
+  .form-check-input:valid {
+    box-shadow: none !important;
+    border: 1px solid var(--medium-grey-color) !important;
   }
 
-  /** Header and navigation styles */
-  #bjellLogo {
-    font-size: 2.25rem;
+  .form-check-input:checked,
+  .form-check-input:checked:valid {
+    background-color: var(--black-color) !important;
+    border: 4px solid var(--white-color) !important;
+    outline: 1px solid var(--medium-grey-color);
+    background-image: none;
   }
 
-  #navbarNav ul {
-    color: var(--white-color) !important;
+  .form-check-input:valid ~ .form-check-label {
+    color: var(--black-color) !important;
+  }
+
+  .form-select {
+    background: var(--blue-color);
+    border: 0px;
+    color: var(--white-color);
+    width: auto;
+    border-radius: 0;
+    padding-left: 0;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 18px 14px;
+    border-bottom: 1px solid var(--white-color);
+  }
+
+  /** Modal border-radius to 0 */
+  .modal-content {
+    border-radius: 0px;
+  }
+
+  /** Width for flags on Contact page */
+  .flag {
+    width: 82px;
+  }
+
+  /** Ul styles */
+  ul {
+    list-style-position: inside;
+  }
+
+  /** Change vertical line colour */
+  .vr {
+    background-color: var(--light-grey-color);
+  }
+
+  /** Black background class */
+  .black-bg {
+    background-color: var(--black-color);
+    opacity: 1;
+  }
+
+  /** Blue background class */
+  .blue-bg {
+    background-color: var(--blue-color);
+  }
+
+  @media only screen and (max-width: 992px) {
+    /** Style navigation ul on small sizes */
+    #navbarNav ul {
+      list-style-type: disc !important;
+      list-style-position: outside;
+      color: var(--white-color) !important;
+    }
+
+    /** Text styles */
+    h1 {
+      font-size: 2rem;
+    }
+
+    .fs-lg-6 {
+      font-size: 1rem !important;
+    }
+
+    .text-light-lg {
+      color: var(--white-color) !important;
+    }
+
+    /** Button styles */
+    .btn-primary {
+      width: 100%;
+    }
+
+    /** Header and navigation styles */
+    #bjellLogo {
+      font-size: 2.25rem;
+    }
+
+    #navbarNav ul {
+      color: var(--white-color) !important;
+    }
   }
 }
