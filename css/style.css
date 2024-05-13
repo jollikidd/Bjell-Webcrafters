@@ -77,6 +77,66 @@ header {
   font-size: 3rem;
 }
 
+/** Footer styles **/
+
+footer {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+}
+
+footer ul {
+  list-style-position: inside;
+  padding: 0;
+}
+
+footer hr {
+  opacity: 1;
+  background-color: var(--white-color);
+}
+
+footer input {
+  background-color: transparent !important;
+  border: 3px solid var(--white-color) !important;
+  color: var(--white-color) !important;
+}
+
+/** Footer placeholder colour changes **/
+footer input::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: var(--white-color) !important;
+}
+
+footer input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: var(--white-color) !important;
+  opacity: 1;
+}
+
+footer input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: var(--white-color) !important;
+  opacity: 1;
+}
+
+footer input::-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--white-color) !important;
+}
+
+footer input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--white-color) !important;
+}
+
+footer input::placeholder {
+  /* Most modern browsers support this now. */
+  color: var(--white-color) !important;
+}
+
+footer .btn-primary {
+  width: auto;
+}
+
 /** Button styles */
 .btn-primary {
   border-radius: 0;
@@ -91,13 +151,11 @@ header {
   background-color: var(--blue-color);
 }
 
-.btn-action{
-border-radius: 50px;
-background-color: var(--black-color);
-color: white;
-padding:1rem 4.5rem 
-
-
+.btn-action {
+  border-radius: 50px;
+  background-color: var(--black-color);
+  color: white;
+  padding: 1rem 4.5rem;
 }
 
 /** Form input styling */
