@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@700&family=IBM+Plex+Mono:wght@500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gupter:wght@700&family=IBM+Plex+Mono:wght@500;600&display=swap");
 
 /** Root colours */
 :root {
@@ -12,19 +12,19 @@
 
 /** Fonts */
 .ibm-plex-mono-medium {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-weight: 500;
   font-style: normal;
 }
 
 .ibm-plex-mono-semibold {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-weight: 600;
   font-style: normal;
 }
 
 .gupter-bold {
-  font-family: 'Gupter', serif;
+  font-family: "Gupter", serif;
   font-weight: 700;
   font-style: normal;
 }
@@ -91,17 +91,35 @@ header {
   background-color: var(--blue-color);
 }
 
-.btn-action{
-border-radius: 50px;
-background-color: var(--black-color);
-color: white;
-padding:1rem 4.5rem 
-
-
+.btn-action {
+  border-radius: 50px;
+  background-color: var(--black-color);
+  color: white;
+  padding: 1rem 4.5rem;
 }
 
+.btn-view {
+  border-radius: 50px;
+  background-color: var(--blue-color);
+  color: white;
+  padding: 1rem 4.5rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "IBM Plex Mono";
+
+
+
+
+
 /** Form input styling */
-input[type='checkbox']:focus {
+input[type="checkbox"]:focus {
   box-shadow: 0 0 0px rgba(0, 0, 0, 0) inset, 0 0 0px rgba(0, 0, 0, 0);
   outline: 1px solid var(--black-color);
 }
