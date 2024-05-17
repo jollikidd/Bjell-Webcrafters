@@ -48,10 +48,10 @@ contactForm.addEventListener(
       event.preventDefault();
       event.stopPropagation();
       invalidFormFeedback.classList.add('d-block');
+    } else {
+      // Set the form submission state in localStorage
+      localStorage.setItem('formSubmitted', 'true');
     }
-
-    // Set the form submission state in localStorage
-    localStorage.setItem('formSubmitted', 'true');
 
     contactForm.classList.add('was-validated');
   },
