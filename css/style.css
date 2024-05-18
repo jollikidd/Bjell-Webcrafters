@@ -150,6 +150,11 @@ footer .btn-primary {
   height: 200px;
 }
 
+#sheepImg1,
+#sheepImg2 {
+  cursor: pointer;
+}
+
 /** Button styles */
 .btn-primary {
   border-radius: 0;
