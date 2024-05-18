@@ -57,6 +57,9 @@ document.write(
       id="shoppingCartBtn"
       class="btn order-3"
       aria-label="Toggle shopping cart"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#shoppingCart"
+      aria-controls="shoppingCart"
     >
       <i class="bi bi-cart4 fs-2"></i>
     </button>

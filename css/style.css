@@ -259,6 +259,16 @@ body {
     border-radius: 0px;
   }
 
+  /** Shopping cart styles */
+  #shoppingCart {
+    color: var(--white-color);
+  }
+
+  #shoppingCart hr {
+    color: var(--white-color);
+    opacity: 1;
+  }
+
   /** Width for flags on Contact page */
   .flag {
     width: 82px;
